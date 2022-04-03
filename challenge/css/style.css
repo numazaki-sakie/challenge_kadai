@@ -43,13 +43,13 @@ img {
 /* ここまで */
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .header {
     display: flex;
-    /* max-width: 960px; */
+    /* max-width: 1080px; */
     justify-content: space-between;
     padding: 20px 0;
     /* margin: 0 auto; */
@@ -66,11 +66,13 @@ h1 {
 
 .sub {
     color: dimgray;
+    font-size: 1.1em;
 }
 
 .menu {
     display: flex;
     margin-top: 45px;
+    align-items: center;
 }
 
 .menu li {
@@ -87,7 +89,7 @@ h1 {
     height: 0.4em;
     border: 0.1em solid currentColor;
     border-left: 0;
-    border-bottom: 0;
+    border-bottom: 0px;
     box-sizing: border-box;
     transform: translateY(-25%) rotate(135deg);
 }
@@ -99,9 +101,10 @@ h1 {
     width: 1em;
     height: 1em;
     color: #000;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 45px;
 }
+
 .magnifying_glass::before {
     position: absolute;
     top: 0px;
@@ -109,7 +112,7 @@ h1 {
     width: 0.7em;
     height: 0.7em;
     box-sizing: border-box;
-    border: 0.15em solid currentColor;
+    border: 0.1em solid currentColor;
     border-radius: 50%;
     background-color: #fff;
     content: "";
@@ -120,7 +123,7 @@ h1 {
     left: 50%;
     z-index: -1;
     transform: rotate(-45deg);
-    width: 0.15em;
+    width: 0.1em;
     height: 1em;
     box-sizing: border-box;
     background-color: currentColor;
@@ -132,7 +135,7 @@ img {
 }
 
 .sentence {
-    font-size: 25px;
+    font-size: 28px;
     color: dimgray;
     line-height: 1.5;
     padding-top: 100px;
@@ -178,14 +181,16 @@ img {
 
 .write1 {
     display: flex;
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
 
 .date3 {
-    width: 30%;
-    color: gray;
+    width: 35%;
+    color: #999;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .summary2 {
@@ -193,11 +198,14 @@ img {
 }
 
 h2 {
-    padding-bottom: 20px;
+    font-size: 22px;
+    padding-bottom: 30px;
 }
 
 .text {
     color: dimgray;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 /* ここまで記事 */
@@ -205,28 +213,180 @@ h2 {
 /* ページネーション */
 
 .pagenation {
-    max-width: 960px;
+    max-width: 1080px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .pagenation li:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .pagenation li a {
     display: block;
-    padding: 15px 20px;
+    padding: 14px 19px;
     line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #fff;
-    border: 1px solid #bbbbbb;
+    border: 1px solid #ddd;
 }
 
 .pagenation li span {
     display: block;
-    padding: 15px 20px;
+    padding: 14px 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #eeeeee;
-    border: 1px solid #bbbbbb;
+    border: 1px solid #ddd;
+}
+
+hr {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* プロフィールウィジェット */
+
+.profilewidget .profile {
+    display: flex;
+    align-items: center;
+}
+
+.profilewidget .profile .face img {
+	border-radius:50%;
+    width: 100px;
+    height: 100px; 
+    object-fit: cover;
+}
+
+.profilewidget .profile .nametoicon .icon {
+    display: flex;
+    max-width: 120px;
+}
+
+.profilewidget .nametoicon {
+    padding: 40px 0 0 20px;
+}
+
+.profilewidget .profiletext {
+    width: 250px;
+    padding: 15px 0;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: dimgray;
+}
+
+/* ここまでプロフィールウィジェット */
+
+
+.footertext {
+    width: 200px;
+    margin-top: 30px;
+    line-height: 1.7;
+    color: dimgray;
+}
+
+.footerright li h3 {
+    font-size: 0.9em;
+}
+
+/* ここまでフッター右 */
+
+.post .posttitle span {
+    color: dimgray;
+    border-bottom: solid 1px #ddd;
+}
+
+.post .postdate {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #aaa;
+}
+
+.post h3 {
+    padding-bottom: 40px;
+    font-size: 0.9em;
+}
+
+ /* ここまで最近の投稿 */
+
+
+.category h3 {
+    padding-bottom: 40px;
+    font-size: 0.9em;
+}
+
+.category .item span {
+    color: dimgray;
+    border-bottom: solid 1px #ddd;
+}
+
+.category .item {
+    padding-bottom: 20px;
+}
+
+.category .item2 span {
+    color: dimgray;
+    border-bottom: solid 1px #ddd;
+}
+
+.category .item2 {
+    padding-bottom: 90px;
+}
+
+/* フッター全体 */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* 検索ボックス */
+
+.search_container input[type="text"]{
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    height: 2.2em;
+    overflow: hidden;
+}
+
+  .search_container input[type="text"]:focus {
+    outline: 0;
+    height: 3.0em;
+}
+
+/* SNSアイコン */
+
+.my-gray {
+    color: #aaa;
+    font-size: 1.5em
+}
+
+.footericon {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding-right: 230px;
+}
+
+.end {
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.copyright {
+    color: #999;
+}
+
+.word {
+    color: #000;
 }
